@@ -8,7 +8,7 @@ interface ProductProps {
 export function Product({ product }: ProductProps) {
     const [details, setDetails]= useState(false) 
 
-    const btnBgClassName = details ? 'bg-yellow-400' : 'bg-red-400'
+    const btnBgClassName = details ? 'bg-red-400': 'bg-yellow-400' 
     const btnClasses = ['py-2 px-4 border', btnBgClassName]
     
     return (
@@ -20,7 +20,7 @@ export function Product({ product }: ProductProps) {
             className= {btnClasses.join(" ")}
             onClick={() => setDetails(prev => !prev)}
            >
-            {details ? 'Show Details' : 'Hide Details'}
+            {details ?  'Hide Details' : 'Show Details' }
            </button>
 
 
