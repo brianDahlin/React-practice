@@ -9,7 +9,7 @@ export function Product({ product }: ProductProps) {
     const [details, setDetails]= useState(false) 
 
     const btnBgClassName = details ? 'bg-red-400': 'bg-yellow-400' 
-    const btnClasses = ['py-2 px-4 border', btnBgClassName]
+    const btnClasses = ['py-2 px-4 border hover:text-white', btnBgClassName]
     
     return (
         <div className="border py-2 px-4 rounded flex flex-col items-center mb-2">

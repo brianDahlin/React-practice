@@ -26,6 +26,6 @@ export function useProducts() {
       fetchProducts()
     }, [])
 
-    return {loading, error, products}
+    return { loading, error, products }
     
 }
